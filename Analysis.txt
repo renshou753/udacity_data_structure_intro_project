@@ -1,0 +1,24 @@
+### task0
+
+Big o for this problem should be O(1), program just tried to find the first and last lines from the input, irrespective of the input size
+
+### task1
+
+Big o should be O(n) as the program has to scan through each line of the input to get telephone numbers
+
+### task2
+
+Big o should be O(n) as the program has to loop through each line of the input(although loop twice) to calc telephone durations, 2n -> O(n)
+
+### task3a
+
+Big o for part A should be nlog(n), the program first needs to loop through each line of the input go get corresponding area code, time complexity for this step should be O(n); later the program needs to sort the list which has time complexity of nlog(n); since nlog(n) is more consuming then n here I would choose O(nlog(n)) 
+
+### task3b
+
+Big o for part B should be 2n, approximately to O(n) because the program needs to loop through each line of the input roughly twice
+
+### task4
+
+Big o should be nlog(n), the program first needs to loop through each line of the input go get phone list, in my program looped roughly 4 times, time complexity for this step should be 4n -> O(n); later the program needs to sort the list which has time complexity of nlog(n); since nlog(n) is more time consuming I would choose O(nlog(n)) 
+
