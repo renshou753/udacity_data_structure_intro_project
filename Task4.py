@@ -38,8 +38,9 @@ def task4(texts:List, calls:List) -> None:
 
     result = sorted(set(marketers))
 
-    print(f"These numbers could be telemarketers: {result}")
-
+    print(f"These numbers could be telemarketers:")
+    for x in result:
+        print(x)
 """
 Big o should be nlog(n), the program first needs to loop through each line of the input go get phone list, in my program looped roughly 4 times, time complexity for this step should be 4n -> O(n); later the program needs to sort the list which has time complexity of nlog(n); since nlog(n) is more time consuming I would choose O(nlog(n)) 
 """

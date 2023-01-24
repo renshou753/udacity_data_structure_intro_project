@@ -54,7 +54,9 @@ def task3_a(texts: List, calls: List) -> None:
 
     result = sorted(set(codes))
     
-    print(f"The number called by people in Bangalore have codes:{result}")
+    print(f"The number called by people in Bangalore have codes:")
+    for x in result:
+        print(x)
 
 """
 
@@ -77,7 +79,7 @@ def task3_b(texts: List, calls: List) -> None:
     print(f"{per} percent of calls from fixed lines in Bangalore are calls to other fixed lines in Bangalore")
 
 """
-Big o for part A should be nlog(n), the program first needs to loop through each line of the input go get corresponding area code, time complexity for this step should be O(n); later the program needs to sort the list which has time complexity of nlog(n); since nlog(n) is more consuming then n here I would choose O(nlog(n)) 
+Big o for part A should be nlog(n), the program first needs to loop through each line of the input to get corresponding area code, time complexity for this step should be O(n); later the program needs to sort the list which has time complexity of nlog(n); since nlog(n) is more consuming then n here I would choose O(nlog(n)) 
 
 Big o for part B should be 2n, approximately to O(n) because the program needs to loop through each line of the input roughly twice
 """
